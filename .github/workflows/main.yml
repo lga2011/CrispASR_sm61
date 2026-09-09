@@ -9,6 +9,11 @@ on:
     - cron: '14 8 */14 * *'
   workflow_dispatch:
 
+permissions:
+  contents: write
+  id-token: none
+  attestations: none
+
 jobs:
   build:
     runs-on: windows-2022
